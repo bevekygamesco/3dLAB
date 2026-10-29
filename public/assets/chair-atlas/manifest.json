@@ -1,0 +1,415 @@
+{
+  "frames": 60,
+  "per_sheet": 8,
+  "desktop_tile": [
+    960,
+    768
+  ],
+  "mobile_tile": [
+    640,
+    512
+  ],
+  "quality": 86,
+  "sheets": [
+    {
+      "path": "assets/chair-atlas/desktop/0/0.webp",
+      "bytes": 469730,
+      "frames": 8
+    },
+    {
+      "path": "assets/chair-atlas/desktop/0/1.webp",
+      "bytes": 500374,
+      "frames": 8
+    },
+    {
+      "path": "assets/chair-atlas/desktop/0/2.webp",
+      "bytes": 577004,
+      "frames": 8
+    },
+    {
+      "path": "assets/chair-atlas/desktop/0/3.webp",
+      "bytes": 591186,
+      "frames": 8
+    },
+    {
+      "path": "assets/chair-atlas/desktop/0/4.webp",
+      "bytes": 525138,
+      "frames": 8
+    },
+    {
+      "path": "assets/chair-atlas/desktop/0/5.webp",
+      "bytes": 457956,
+      "frames": 8
+    },
+    {
+      "path": "assets/chair-atlas/desktop/0/6.webp",
+      "bytes": 456702,
+      "frames": 8
+    },
+    {
+      "path": "assets/chair-atlas/desktop/0/7.webp",
+      "bytes": 241898,
+      "frames": 4
+    },
+    {
+      "path": "assets/chair-atlas/desktop/1/0.webp",
+      "bytes": 488130,
+      "frames": 8
+    },
+    {
+      "path": "assets/chair-atlas/desktop/1/1.webp",
+      "bytes": 498820,
+      "frames": 8
+    },
+    {
+      "path": "assets/chair-atlas/desktop/1/2.webp",
+      "bytes": 573088,
+      "frames": 8
+    },
+    {
+      "path": "assets/chair-atlas/desktop/1/3.webp",
+      "bytes": 585728,
+      "frames": 8
+    },
+    {
+      "path": "assets/chair-atlas/desktop/1/4.webp",
+      "bytes": 516972,
+      "frames": 8
+    },
+    {
+      "path": "assets/chair-atlas/desktop/1/5.webp",
+      "bytes": 483252,
+      "frames": 8
+    },
+    {
+      "path": "assets/chair-atlas/desktop/1/6.webp",
+      "bytes": 532760,
+      "frames": 8
+    },
+    {
+      "path": "assets/chair-atlas/desktop/1/7.webp",
+      "bytes": 270610,
+      "frames": 4
+    },
+    {
+      "path": "assets/chair-atlas/desktop/2/0.webp",
+      "bytes": 517276,
+      "frames": 8
+    },
+    {
+      "path": "assets/chair-atlas/desktop/2/1.webp",
+      "bytes": 501904,
+      "frames": 8
+    },
+    {
+      "path": "assets/chair-atlas/desktop/2/2.webp",
+      "bytes": 576698,
+      "frames": 8
+    },
+    {
+      "path": "assets/chair-atlas/desktop/2/3.webp",
+      "bytes": 588596,
+      "frames": 8
+    },
+    {
+      "path": "assets/chair-atlas/desktop/2/4.webp",
+      "bytes": 522000,
+      "frames": 8
+    },
+    {
+      "path": "assets/chair-atlas/desktop/2/5.webp",
+      "bytes": 498488,
+      "frames": 8
+    },
+    {
+      "path": "assets/chair-atlas/desktop/2/6.webp",
+      "bytes": 579672,
+      "frames": 8
+    },
+    {
+      "path": "assets/chair-atlas/desktop/2/7.webp",
+      "bytes": 295828,
+      "frames": 4
+    },
+    {
+      "path": "assets/chair-atlas/desktop/3/0.webp",
+      "bytes": 498524,
+      "frames": 8
+    },
+    {
+      "path": "assets/chair-atlas/desktop/3/1.webp",
+      "bytes": 500602,
+      "frames": 8
+    },
+    {
+      "path": "assets/chair-atlas/desktop/3/2.webp",
+      "bytes": 573788,
+      "frames": 8
+    },
+    {
+      "path": "assets/chair-atlas/desktop/3/3.webp",
+      "bytes": 583476,
+      "frames": 8
+    },
+    {
+      "path": "assets/chair-atlas/desktop/3/4.webp",
+      "bytes": 516658,
+      "frames": 8
+    },
+    {
+      "path": "assets/chair-atlas/desktop/3/5.webp",
+      "bytes": 485030,
+      "frames": 8
+    },
+    {
+      "path": "assets/chair-atlas/desktop/3/6.webp",
+      "bytes": 547794,
+      "frames": 8
+    },
+    {
+      "path": "assets/chair-atlas/desktop/3/7.webp",
+      "bytes": 273882,
+      "frames": 4
+    },
+    {
+      "path": "assets/chair-atlas/desktop/4/0.webp",
+      "bytes": 454664,
+      "frames": 8
+    },
+    {
+      "path": "assets/chair-atlas/desktop/4/1.webp",
+      "bytes": 490110,
+      "frames": 8
+    },
+    {
+      "path": "assets/chair-atlas/desktop/4/2.webp",
+      "bytes": 562008,
+      "frames": 8
+    },
+    {
+      "path": "assets/chair-atlas/desktop/4/3.webp",
+      "bytes": 575904,
+      "frames": 8
+    },
+    {
+      "path": "assets/chair-atlas/desktop/4/4.webp",
+      "bytes": 507512,
+      "frames": 8
+    },
+    {
+      "path": "assets/chair-atlas/desktop/4/5.webp",
+      "bytes": 459516,
+      "frames": 8
+    },
+    {
+      "path": "assets/chair-atlas/desktop/4/6.webp",
+      "bytes": 466666,
+      "frames": 8
+    },
+    {
+      "path": "assets/chair-atlas/desktop/4/7.webp",
+      "bytes": 236862,
+      "frames": 4
+    },
+    {
+      "path": "assets/chair-atlas/mobile/0/0.webp",
+      "bytes": 270746,
+      "frames": 8
+    },
+    {
+      "path": "assets/chair-atlas/mobile/0/1.webp",
+      "bytes": 284692,
+      "frames": 8
+    },
+    {
+      "path": "assets/chair-atlas/mobile/0/2.webp",
+      "bytes": 330332,
+      "frames": 8
+    },
+    {
+      "path": "assets/chair-atlas/mobile/0/3.webp",
+      "bytes": 334622,
+      "frames": 8
+    },
+    {
+      "path": "assets/chair-atlas/mobile/0/4.webp",
+      "bytes": 300866,
+      "frames": 8
+    },
+    {
+      "path": "assets/chair-atlas/mobile/0/5.webp",
+      "bytes": 265360,
+      "frames": 8
+    },
+    {
+      "path": "assets/chair-atlas/mobile/0/6.webp",
+      "bytes": 269840,
+      "frames": 8
+    },
+    {
+      "path": "assets/chair-atlas/mobile/0/7.webp",
+      "bytes": 141440,
+      "frames": 4
+    },
+    {
+      "path": "assets/chair-atlas/mobile/1/0.webp",
+      "bytes": 278288,
+      "frames": 8
+    },
+    {
+      "path": "assets/chair-atlas/mobile/1/1.webp",
+      "bytes": 282782,
+      "frames": 8
+    },
+    {
+      "path": "assets/chair-atlas/mobile/1/2.webp",
+      "bytes": 328258,
+      "frames": 8
+    },
+    {
+      "path": "assets/chair-atlas/mobile/1/3.webp",
+      "bytes": 330604,
+      "frames": 8
+    },
+    {
+      "path": "assets/chair-atlas/mobile/1/4.webp",
+      "bytes": 296998,
+      "frames": 8
+    },
+    {
+      "path": "assets/chair-atlas/mobile/1/5.webp",
+      "bytes": 276048,
+      "frames": 8
+    },
+    {
+      "path": "assets/chair-atlas/mobile/1/6.webp",
+      "bytes": 302860,
+      "frames": 8
+    },
+    {
+      "path": "assets/chair-atlas/mobile/1/7.webp",
+      "bytes": 153312,
+      "frames": 4
+    },
+    {
+      "path": "assets/chair-atlas/mobile/2/0.webp",
+      "bytes": 293914,
+      "frames": 8
+    },
+    {
+      "path": "assets/chair-atlas/mobile/2/1.webp",
+      "bytes": 283780,
+      "frames": 8
+    },
+    {
+      "path": "assets/chair-atlas/mobile/2/2.webp",
+      "bytes": 328326,
+      "frames": 8
+    },
+    {
+      "path": "assets/chair-atlas/mobile/2/3.webp",
+      "bytes": 332242,
+      "frames": 8
+    },
+    {
+      "path": "assets/chair-atlas/mobile/2/4.webp",
+      "bytes": 299024,
+      "frames": 8
+    },
+    {
+      "path": "assets/chair-atlas/mobile/2/5.webp",
+      "bytes": 282474,
+      "frames": 8
+    },
+    {
+      "path": "assets/chair-atlas/mobile/2/6.webp",
+      "bytes": 325052,
+      "frames": 8
+    },
+    {
+      "path": "assets/chair-atlas/mobile/2/7.webp",
+      "bytes": 164992,
+      "frames": 4
+    },
+    {
+      "path": "assets/chair-atlas/mobile/3/0.webp",
+      "bytes": 280812,
+      "frames": 8
+    },
+    {
+      "path": "assets/chair-atlas/mobile/3/1.webp",
+      "bytes": 283266,
+      "frames": 8
+    },
+    {
+      "path": "assets/chair-atlas/mobile/3/2.webp",
+      "bytes": 328618,
+      "frames": 8
+    },
+    {
+      "path": "assets/chair-atlas/mobile/3/3.webp",
+      "bytes": 330852,
+      "frames": 8
+    },
+    {
+      "path": "assets/chair-atlas/mobile/3/4.webp",
+      "bytes": 296730,
+      "frames": 8
+    },
+    {
+      "path": "assets/chair-atlas/mobile/3/5.webp",
+      "bytes": 276792,
+      "frames": 8
+    },
+    {
+      "path": "assets/chair-atlas/mobile/3/6.webp",
+      "bytes": 307220,
+      "frames": 8
+    },
+    {
+      "path": "assets/chair-atlas/mobile/3/7.webp",
+      "bytes": 155240,
+      "frames": 4
+    },
+    {
+      "path": "assets/chair-atlas/mobile/4/0.webp",
+      "bytes": 262356,
+      "frames": 8
+    },
+    {
+      "path": "assets/chair-atlas/mobile/4/1.webp",
+      "bytes": 278426,
+      "frames": 8
+    },
+    {
+      "path": "assets/chair-atlas/mobile/4/2.webp",
+      "bytes": 323346,
+      "frames": 8
+    },
+    {
+      "path": "assets/chair-atlas/mobile/4/3.webp",
+      "bytes": 326224,
+      "frames": 8
+    },
+    {
+      "path": "assets/chair-atlas/mobile/4/4.webp",
+      "bytes": 293116,
+      "frames": 8
+    },
+    {
+      "path": "assets/chair-atlas/mobile/4/5.webp",
+      "bytes": 264032,
+      "frames": 8
+    },
+    {
+      "path": "assets/chair-atlas/mobile/4/6.webp",
+      "bytes": 274268,
+      "frames": 8
+    },
+    {
+      "path": "assets/chair-atlas/mobile/4/7.webp",
+      "bytes": 139172,
+      "frames": 4
+    }
+  ]
+}
