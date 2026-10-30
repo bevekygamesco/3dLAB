@@ -1,0 +1,64 @@
+/* A covered destination change avoids long cross-page scrolls and skipped demos. */
+html{scroll-behavior:auto;scroll-padding-top:0}
+.section-wipe{position:fixed;inset:0;z-index:200;pointer-events:none;visibility:hidden;contain:strict}
+.section-wipe:not(.wipe-idle){visibility:visible;pointer-events:auto;touch-action:none}
+.wipe-paint{position:absolute;inset:0;background:#080b0b;clip-path:inset(0 0 100%);display:grid;place-items:center}
+.wipe-cover .wipe-paint{animation:paint-cover .48s cubic-bezier(.76,0,.24,1) both}
+.wipe-reveal .wipe-paint{animation:paint-reveal .6s cubic-bezier(.76,0,.24,1) both}
+.wipe-wordmark{display:flex;flex-direction:column;align-items:center;gap:20px;color:var(--cream)}
+.wipe-wordmark>span{font-size:clamp(20px,4vw,56px);font-weight:600;letter-spacing:-.04em}
+.wipe-wordmark>i{width:50px;height:2px;background:var(--coral)}
+.wipe-wordmark>small{font-size:8px;letter-spacing:4px;color:#c5beb4}
+.wipe-roller{position:absolute;top:0;left:-3%;width:106%;height:28px;background:linear-gradient(#ff918b,var(--coral) 28%,#b83b37);border-radius:30px;box-shadow:0 8px 24px #0005;transform:translateY(-80px)}
+.wipe-roller>i{position:absolute;inset:5px 16px;border-top:1px solid #ffffff77;border-bottom:1px solid #5113;border-radius:20px}
+.wipe-roller>span{position:absolute;right:12%;top:-40px;width:130px;height:45px;border:5px solid #c8c0b5;border-bottom:0;border-radius:15px 15px 0 0}
+.wipe-cover .wipe-roller{animation:roller-cover .48s cubic-bezier(.76,0,.24,1) both}
+.wipe-reveal .wipe-roller{animation:roller-reveal .6s cubic-bezier(.76,0,.24,1) both}
+@keyframes paint-cover{from{clip-path:inset(0 0 100%)}to{clip-path:inset(0)}}
+@keyframes paint-reveal{from{clip-path:inset(0)}to{clip-path:inset(100% 0 0)}}
+@keyframes roller-cover{from{transform:translateY(-80px)}to{transform:translateY(calc(100dvh + 50px))}}
+@keyframes roller-reveal{from{transform:translateY(-80px)}to{transform:translateY(calc(100dvh + 50px))}}
+/* The material stage rises once into view; its section geometry stays stable. */
+.material-arrival>.material-stage{opacity:.3;transform:translate3d(0,90px,0);transition:transform 1s cubic-bezier(.16,1,.3,1),opacity .85s}
+.material-arrival.material-arrived>.material-stage{opacity:1;transform:translateZ(0)}
+.desktop-nav>a,.desktop-nav>button{position:relative;padding:10px 0;transition:color .25s,translate .25s}
+.desktop-nav>a:after,.desktop-nav>button:after{content:'';position:absolute;left:0;right:0;bottom:2px;height:1px;background:var(--coral);transform:scaleX(0);transform-origin:left;transition:transform .3s}
+.desktop-nav>a:hover,.desktop-nav>button:hover{translate:0 -2px}
+.desktop-nav>a:hover:after,.desktop-nav>button:hover:after,.desktop-nav>:focus-visible:after{transform:scaleX(1)}
+.radial-menu:not(.is-open) .hamburger:hover span:first-child{transform:translateX(-4px);background:var(--coral)}
+.radial-menu:not(.is-open) .hamburger:hover span:last-child{transform:translateX(4px);background:var(--coral)}
+.hamburger span{transition:transform .4s cubic-bezier(.22,1,.36,1),background .25s}
+.is-open .hamburger:hover{filter:drop-shadow(0 0 7px #ff615999)}
+.is-open .hamburger:hover span{background:var(--coral)}
+.footer-main a,.footer-main button,.footer-bottom a,.footer-bottom button{transition:color .25s,translate .3s}
+.footer-main a:hover,.footer-main button:hover{color:var(--coral);translate:4px 0}
+.footer-bottom a:hover,.footer-bottom button:hover{color:var(--coral);translate:0 -2px}
+.footer-go{transition:transform .4s,background .3s,color .3s}
+.footer-go:hover{transform:rotate(-35deg);background:var(--coral);color:#0c0e0e}
+/* Avoid accidental selection while navigating or manipulating products. */
+body{user-select:none;-webkit-user-select:none}
+input,textarea,select,[contenteditable=true]{user-select:text;-webkit-user-select:text}
+img,canvas,.hero-product,.chair-turntable,.material-swatch-deck{user-select:none;-webkit-user-select:none;-webkit-user-drag:none}
+::selection{background:#ff615955;color:inherit}
+.pricing-modal{width:min(1100px,calc(100vw - 24px))!important}
+.pricing-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-top:24px}
+.pricing-plan{display:flex;flex-direction:column;padding:24px 20px;border:1px solid #191d1d24;border-radius:18px;background:#ffffff35}
+.pricing-plan.recommended{background:#0d1616;color:var(--cream);border-color:#ff615955}
+.pricing-plan>span{font-size:8px;letter-spacing:1.5px;color:#827164}
+.pricing-plan.recommended>span{color:#ff9c90}
+.pricing-plan h3{font-size:23px;line-height:1.1;letter-spacing:-.7px;margin:16px 0 22px;min-height:50px}
+.pricing-plan>strong{font-size:19px;letter-spacing:-.5px}
+.pricing-plan p{font-size:12px;line-height:1.55;opacity:.75;margin:14px 0}
+.pricing-plan ul{list-style:none;padding:0;margin:8px 0 24px;flex:1}
+.pricing-plan li{display:flex;align-items:flex-start;gap:7px;font-size:11px;line-height:1.5;padding:7px 0}
+.pricing-plan li svg{flex-shrink:0;color:var(--coral);margin-top:1px}
+.pricing-plan .button{font-size:11px;padding:12px 10px;gap:8px;white-space:normal;min-height:42px}
+.pricing-modal>.pricing-note{font-size:11px;margin:18px 0 0;line-height:1.5}
+@media(max-width:767px){.material-arrival>.material-stage{transform:translate3d(0,45px,0)}.material-arrival.material-arrived>.material-stage{transform:none}.pricing-grid{gap:8px;margin-top:15px}.pricing-plan{padding:15px 10px;border-radius:12px}.pricing-plan>span{font-size:6px;letter-spacing:.6px}.pricing-plan h3{font-size:16px;letter-spacing:-.4px;min-height:54px;margin:12px 0}.pricing-plan>strong{font-size:13px}.pricing-plan p{font-size:9px}.pricing-plan li{font-size:8px;gap:4px}.pricing-plan li svg{width:11px}.pricing-plan ul{margin-bottom:14px}.pricing-plan .button{font-size:9px;padding:9px 5px}.pricing-plan .button svg{display:none}.wipe-roller{height:20px}}
+@media(prefers-reduced-motion:reduce){.material-arrival>.material-stage{opacity:1;transform:none;transition:none}.section-wipe{display:none}}
+/* Chapter playback owns one viewport; document momentum cannot reveal a neighbour. */
+html,body{overscroll-behavior-y:none}
+.scroll-scene{overflow-anchor:none}
+.scroll-scene[data-wheel-owned=true]{z-index:80}
+.scroll-scene[data-wheel-owned=true]>.scene-sticky{position:fixed;inset:0;width:100%;height:100svh;max-height:none;transform:none;transition:none;opacity:1}
+@media(prefers-reduced-motion:reduce){.scroll-scene[data-wheel-owned=true]>.scene-sticky{position:relative;inset:auto;height:auto}}

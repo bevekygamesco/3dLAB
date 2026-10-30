@@ -4,7 +4,7 @@ export const atlasUrl=(mobile:boolean,finish:number,sheet:number)=>`/assets/chai
 export function getAtlasBlob(url:string){
  const hit=blobs.get(url);if(hit)return hit;
  const job=fetch(url,{cache:'force-cache'}).then(r=>{if(!r.ok)throw Error(`Atlas ${r.status}`);return r.blob()}).catch(error=>{blobs.delete(url);throw error});blobs.set(url,job);
- while(blobs.size>16)blobs.delete(blobs.keys().next().value!);return job;
+ while(blobs.size>40)blobs.delete(blobs.keys().next().value!);return job;
 }
 let warming:Promise<void>|undefined;
 export function warmViewerAssets(mobile:boolean){

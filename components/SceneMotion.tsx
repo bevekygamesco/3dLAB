@@ -4,6 +4,8 @@ const clamp=(n:number,min=0,max=1)=>Math.max(min,Math.min(max,n));
 const smooth=(a:number,b:number,x:number)=>{const t=clamp((x-a)/(b-a));return t*t*(3-2*t)};
 export default function SceneMotion(){useEffect(()=>{
  const media=window.matchMedia('(prefers-reduced-motion: reduce)');if(media.matches)return;
+ const material=document.getElementById('materials');
+ const materialReveal=new IntersectionObserver(entries=>{for(const e of entries)if(e.isIntersecting){e.target.classList.add('material-arrived');materialReveal.unobserve(e.target)}},{threshold:0,rootMargin:'0px 0px -8% 0px'});if(material){material.classList.add('material-arrival');materialReveal.observe(material)}
  const targets=new Set<HTMLElement>();let frame=0;let disposed=false;
  const observer=new IntersectionObserver(entries=>{for(const e of entries)if(e.isIntersecting){e.target.classList.add('scene-visible');observer.unobserve(e.target)}},{threshold:.06});
  const revealSelector='.market-card,.projects-heading,.project-card,.project-toolbar,.collection-end,.project-cta>*,.faq-heading,.faq-list,.faq-list article,.footer-hero,.footer-main>div,.footer-bottom';
@@ -21,5 +23,5 @@ export default function SceneMotion(){useEffect(()=>{
  };
  function schedule(){if(!frame&&!disposed)frame=requestAnimationFrame(update)}
  collect();const changes=new MutationObserver(()=>collect());changes.observe(document.body,{childList:true,subtree:true});window.addEventListener('scroll',schedule,{passive:true});window.addEventListener('resize',schedule,{passive:true});window.addEventListener('load',schedule);document.fonts?.ready.then(schedule);
- return()=>{disposed=true;cancelAnimationFrame(frame);observer.disconnect();changes.disconnect();window.removeEventListener('scroll',schedule);window.removeEventListener('resize',schedule);window.removeEventListener('load',schedule);targets.forEach(e=>e.classList.remove('scene-reveal'));document.documentElement.style.removeProperty('--page-scroll')}
+ return()=>{disposed=true;materialReveal.disconnect();material?.classList.remove('material-arrival');cancelAnimationFrame(frame);observer.disconnect();changes.disconnect();window.removeEventListener('scroll',schedule);window.removeEventListener('resize',schedule);window.removeEventListener('load',schedule);targets.forEach(e=>e.classList.remove('scene-reveal'));document.documentElement.style.removeProperty('--page-scroll')}
  },[]);return null}

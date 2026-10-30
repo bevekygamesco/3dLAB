@@ -1,3 +1,4 @@
+import SectionNavigation from '@/components/SectionNavigation';
 import { StudioProvider } from '@/components/StudioProvider';
 import CinematicLoader from '@/components/CinematicLoader';
 import ReactiveSurfaces from '@/components/ReactiveSurfaces';
@@ -16,5 +17,5 @@ import FAQ from '@/components/FAQ';
 import MobilityStory from '@/components/MobilityStory';
 import Footer from '@/components/Footer';
 export default function Home() {
-  return <StudioProvider><StudioCursor /><CinematicLoader /><SceneMotion /><ScrollProgress /><ReactiveSurfaces /><Header /><main><Hero /><Marketplace /><ExperienceStory /><Projects /><MaterialLab /><MobilityStory /><ProcessStory /><ProjectCTA /><FAQ /></main><Footer /></StudioProvider>;
+  return <StudioProvider><SectionNavigation/><StudioCursor /><CinematicLoader /><SceneMotion /><ScrollProgress /><ReactiveSurfaces /><Header /><main><Hero /><Marketplace /><ExperienceStory /><Projects /><MaterialLab /><MobilityStory /><ProcessStory /><ProjectCTA /><FAQ /></main><Footer /></StudioProvider>;
 }

@@ -7,3 +7,6 @@ export function jumpToChapter(root:HTMLElement|null,index:number,count:number){
  const target=(index+.5)/count;
  window.scrollTo({top:window.scrollY+root.getBoundingClientRect().top+distance*target,behavior:'smooth'});
 }
+
+/** Same-page navigation is covered before the destination is changed. */
+export function navigateToSection(id:string){window.dispatchEvent(new CustomEvent('studio-navigate',{detail:id}))}
